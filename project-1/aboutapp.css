@@ -1,0 +1,137 @@
+body{
+    color: white; 
+    /* background:linear-gradient(to right, #25296b, #010001); */
+
+     background-image:url(blue-mountain-landscape-during-nighttime-lejp0wvsxdzhm78t.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100% 100%;
+}
+*{
+     box-sizing: border-box;
+          font-family: 'Times New Roman', Times, serif;
+}
+
+
+ul{   width: 100%;
+    height: 10%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+}
+
+UL{
+    list-style: none;
+    text-decoration: none;
+}
+a{  color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    width: max-content;
+    letter-spacing: 0.15em;
+    font-size: 24px ;
+    position:relative ;
+
+    display: inline-block;
+    padding: 15px 20px;
+
+
+}
+a::after{
+    display: block;
+    content:"" ;
+    position: absolute;
+    bottom:0 ;
+    height: 4px;
+    width: 100;
+    left: 0;
+    background-color: rgb(16, 128, 213);
+    transition: width 0.3s ease ,left  0.3s ease 0s;
+    /* transition-timing-function: ease-in-out; */
+ 
+}
+
+a:hover::after{
+     width: 100%;
+     left: 0;
+}
+
+.navs{
+        color: white;
+        text-shadow:0px 0px 10px rgb(87, 93, 93),
+                    0px 0px 10px rgb(112, 124, 124),
+                    0px 0px 10px rgb(76, 79, 79),
+                    0px 0px 10px rgb(142, 157, 157);
+
+}
+
+.btn{
+    padding: 15px 40px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: -1;
+    border-radius: 12px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+section{
+    width: 90%;
+    display: grid;
+     grid-template-columns: repeat(2,1fr);
+     row-gap: 30px;
+     margin-bottom: 50px;
+}
+
+h1{
+    width: auto;
+    height: auto;
+     font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+      background: transparent;
+    backdrop-filter: blur(10px);
+    margin-bottom: 50px;
+}
+.curosel{
+    align-self: center;
+}
+.about-1{
+    width: 80%;
+    height: 250px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+h2{
+    font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h3{
+     color: #4ecdc4;
+     font-family: "Tulpen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+    font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.item-4{
+      grid-row: 1/2;
+      grid-column: 2/3;
+}
